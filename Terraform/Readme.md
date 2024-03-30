@@ -1,24 +1,43 @@
-# How to Adjust Terraform
-## Create a Service Account
+# How to Configure Terraform
+## Creating a Service Account
 
-First of all we need to create a new Project with the rights we need. For this Project we go like that:
+To begin, we need to create a new project with the necessary permissions. Follow these steps:
 
-IAM & Admin -> Service Accounts -> create service account
-- Name: terraform-runner
-- Role's: Storage admin, bigquery admin and Compute Admin
+1. Navigate to IAM & Admin -> Service Accounts -> Create Service Account.
+   
+3. Enter the following details:
+   
+   - Name: terraform-runner
+     
+   - Roles: Storage Admin, BigQuery Admin, and Compute Admin.
+  
 
-## Download the Key and store it local
-`Serive Accounts` -> `Keys` -> `ADD KEY` -> `Create new Key` -> `Json`
-- Store the file local!
-- Do not upload it in your GitHup repository!
 
 
-## Log in to your gcloud
 
-Go to your directory and type in your bash:
+## Downloading and Storing the Key Locally
+
+Proceed as follows to download and store the key locally:
+
+1. Navigate to `Service Accounts` -> `Keys` -> `ADD KEY` -> `Create new Key` -> `JSON`.
+
+2. Make sure to store the file locally.
+
+3. **Do not** upload it to your GitHub repository!
+
+
+
+## Logging in to Your gcloud Account
+
+Navigate to your directory and execute the following commands in your terminal:
+
 - `gcloud auth login`
+  
 - `export $GOOGLE_CREDENTIALS='PATH/my-creds.json'`
-- check if it worked: `echo $GOOGLE_CREDENTIALS`
+  
+- Verify that it worked by typing: `echo $GOOGLE_CREDENTIALS`
+
+
 
 Example:
 ```bash
@@ -43,15 +62,22 @@ $ echo $GOOGLE_CREDENTIALS
 C:/Users/Armut/Desktop/KEYS-AmusementPark/keys/my-creds.json
 ```
 
-## main.tf and variables.tf
+## Setting Up main.tf and variables.tf
+
 Create `main.tf` and `variables.tf`.
 
-- Use `terraform fmt` for making the code pretty
-- After we settle `main.tf` and `variables.tf` up, we can use it:
+- Utilize terraform fmt to format the code properly.
+  
+- Once main.tf and variables.tf are set up, proceed with the following commands:
+  
   - `terraform init`
+    
   - `terraform plan`
+    
   - `terraform apply`
-- If we doesn't need it anymore use to delete your buckets and tables in gc:
+    
+- If the resources are no longer needed, use the following command to delete your buckets and tables in GCP:
+  
   - `terraform destroy`
  
 
