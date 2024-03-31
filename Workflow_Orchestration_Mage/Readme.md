@@ -31,7 +31,9 @@ Note: These two transformers may not be necessary since we generated these files
 Finally, we partition the data after a certain number of records. For every 10,000 records, we partition it and export it to Google Cloud Storage. Partitioning the data helps in faster uploading as it reduces memory consumption.
 
 Here the pipeline: 
-![What we wanna do](https://github.com/Yokanisha/DataZoomCamp2024/blob/main/Images/001.PNG)
+
+![action_pipeline](https://github.com/Yokanisha/generatedAmusementPark/assets/95353768/22c4d9fb-da2d-478b-8b95-e2a38f8b98f3)
+
 
 ## Second pipeline - action.csv.gz
 This pipeline is not much different from the first one. Here, we take the csv.gz file via URL, define the schema, and pass it to the next two transformers. The first transformer filters out rows where the values are positive (including zero), while the second transformer removes leading and trailing spaces from the values. In contrast to the first pipeline, we also have higher values which have the data type string. For that reason, we introduce a third transformer to ensure that all values in the string column are in lower case.
@@ -41,4 +43,9 @@ Note: Similarly to the first pipeline, these three transformers may not be neces
 Finally, we partition the data after the column entry_date, which is of type datetime. We partition it based on entry_date and export it to Google Cloud Storage. Partitioning the data helps in faster uploading as it reduces memory consumption.
 
 Here the pipeline: 
-![What we wanna do](https://github.com/Yokanisha/DataZoomCamp2024/blob/main/Images/001.PNG)
+
+![visitor_pipeline](https://github.com/Yokanisha/generatedAmusementPark/assets/95353768/672f7efe-e021-40d6-9fbf-91e1d8b72979)
+
+## Pipeline - from gcs to bigquery
+
+TEXT
