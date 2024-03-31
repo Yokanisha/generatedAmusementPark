@@ -13,3 +13,19 @@ cp dev.env .env
 rm dev.env
 docker compose up
 ```
+
+# What pipelines do we need
+There are two types of pipelines we need.
+
+First pipeline: This pipeline involves taking the csv.gz file via URL, transforming it, and exporting it to Google Cloud Storage.
+
+Second pipeline: In this pipeline, we retrieve the files from Google Cloud Storage and export them to Google Cloud BigQuery.
+
+Note: We are performing these actions with visitor.csv.gz and action.csv.gz.
+
+## First pipeline - action.csv.gz
+In this pipeline, we take the csv.gz file via URL, define the schema, and pass it to the next two transformers. The first transformer filters out rows where the values are positive (including zero), while the second transformer removes leading and trailing spaces from the values.
+
+Note: These two transformers may not be necessary since we generated these files ourselves. However, if we were to retrieve data from an API or in real-world scenarios such as sensor data, the data might not be as clean. Therefore, for practice and to account for potential data cleanliness issues, we have included them.
+
+Finally, we partition the data after a certain number of records. For every 10,000 records, we partition it and export it to Google Cloud Storage. Partitioning the data helps in faster uploading as it reduces memory consumption.
