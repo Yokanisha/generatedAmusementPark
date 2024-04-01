@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: generated-amusement-park
+    schema: action_visitor
+
+    tables:
+      - name: action
+      - name: visitor
