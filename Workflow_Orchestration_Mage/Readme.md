@@ -48,4 +48,8 @@ Here the pipeline:
 
 ## Pipeline - from gcs to bigquery
 
-TEXT
+In this pipeline, we will first create a block that creates a partitioned table in BigQuery. Then, we will transfer the Parquet files from our storage into BigQuery as a table.
+
+For visitor data, we create a partitioned table partitioned by DAY. For action data, we create a partitioned table partitioned by Integer range.
+
+After executing the pipeline, we will have all the data in BigQuery that we need for the data modeling in dbt.
