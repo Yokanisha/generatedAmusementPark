@@ -66,7 +66,7 @@ C:/Users/Armut/Desktop/KEYS-AmusementPark/keys/my-creds.json
 
 Create `main.tf` and `variables.tf`.
 
-- Utilize terraform fmt to format the code properly.
+- Utilize `terraform fmt` to format the code properly.
   
 - Once main.tf and variables.tf are set up, proceed with the following commands:
   
