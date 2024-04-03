@@ -59,6 +59,10 @@ After executing the pipeline, we will have all the data in BigQuery that we need
 
 `Note:` At the end of the pipeline, the pipeline named action_bq triggers the pipeline named visitor_bq. After this step, all necessary files are stored in Google Cloud Storage and Google Cloud BigQuery.
 
+| action_bq  | visitor_bq  |
+|-----------------------------|--------------------------------|
+| ![action_pipeline_bq](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/pipeline_action_bq.PNG?raw=true) | ![visitor_pipeline_bq](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/pipeline_visitor_bq.PNG?raw=true)|                                  |
+
 ## Schedule and trigger
 As you are aware, we generate our own data and upload it to GitHub, where we retrieve the data using `mage-ai`. This means that if you intend to schedule the pipeline daily, monthly, etc., you also need to update the files daily, monthly, etc.
 
@@ -66,9 +70,9 @@ To simplify this process, instead of creating a schedule, we opt to trigger it `
 
 Here is the trigger flow:
 ```
-action_gcs -> `visitor_gcs -> action_bq -> visitor_bq
+action_gcs -> visitor_gcs -> action_bq -> visitor_bq
 ```
-
+![Pipelines](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Pipelines.PNG?raw=true)
 If you wish to create a schedule, follow these steps:
 
 Navigate to Triggers -> New Triggers -> Schedule.
