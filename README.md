@@ -23,7 +23,13 @@ Infrastructure as Code software (IaC) - [Terraform](https://www.terraform.io/)
 
 Language - [Python](https://www.python.org/)
 
-Workflow Orchestration - [mage.-ai](https://www.mage.ai/)
+Workflow Orchestration - [mage-ai](https://www.mage.ai/)
+
+## Amusement Park Architecture
+
+![Architecture]()
+
+
 
 
 
