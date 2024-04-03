@@ -59,6 +59,44 @@ Several improvements could be implemented here:
 - Increasing the number of tests in dbt.
 - Enhancing documentation.
 
+## :pencil: Instructions for Cloning the Repository
+**Clone the Repository:** Clone this repository by running the following command:
+```bash
+git clone https://github.com/Yokanisha/generatedAmusementPark.git
+```
+**Navigate to the Directory:** Go into your cloned repository directory:
+```bash
+cd generatedAmusementPark
+```
+**Download Mage-AI Docker Image:** Run the following command to download the Docker image for Mage-AI:
+```bash
+docker pull mageai/mageai:latest
+```
+**Clone Mage-AI Repository:** Clone the compose-quickstart repository for Mage-AI by executing the following command:
+```bash
+git clone https://github.com/mage-ai/compose-quickstart.git
+```
+**Navigate to the Mage-AI Quickstart Directory:** Go into the directory of the cloned compose-quickstart repository:
+```bash
+cd compose-quickstart
+```
+**Create Configuration File:** Copy the sample configuration file `dev.env` and rename it to `.env` by running the following command:
+```bash
+cp dev.env .env
+```
+**Remove Redundant File:** Delete the unnecessary sample configuration file `dev.env` to clean up the directory:
+
+```bash
+rm dev.env
+```
+**Start Docker Containers:** Run the following command to start the Docker containers for Mage-AI and all associated services:
+
+```bash
+docker compose up
+```
+
+After completing these steps, your repository and Mage-AI should be successfully set up.
+
 ## 💡 Next Project
 
 In this project, various technologies and knowledge were utilized. However, there are improvements that could be made. Rather than enhancing the current project, the next project will be designed to incorporate the learned improvement suggestions, aiming for greater advancement. Here are some aspects to be incorporated in the next project:
