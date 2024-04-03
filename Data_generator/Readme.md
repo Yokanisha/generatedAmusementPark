@@ -1,3 +1,3 @@
 # Generate data python scripts
 
-The action_data_generator.py Python script will generate a CSV file for the action data, and the visitor_data_generator.py Python script will generate a CSV file for the visitor data. To reduce storage, we converted both CSV files into csv.gz file using the convert_csv_to_gz.py Python script.
+The [action_data_generator.py](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Data_generator/action_data_generator.py) Python script will generate a CSV file for the action data, and the [visitor_data_generator.py](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Data_generator/visitor_data_generator.py) Python script will generate a CSV file for the visitor data. To reduce storage, we converted both CSV files into csv.gz file using the [convert_csv_to_gz.py](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Data_generator/convert_csv_to_gz.py) Python script.
