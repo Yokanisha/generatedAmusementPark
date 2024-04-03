@@ -27,7 +27,32 @@ Workflow Orchestration - [mage-ai](https://www.mage.ai/)
 
 ## Amusement Park Architecture
 
-![Architecture]()
+![Architecture](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Architecture.png?raw=true)
+
+The architecture (above) illustrates how the process operates. We integrate the Orchestrator-Workflow Mage-AI into Docker. Terraform is utilized to create tables for Google Cloud Storage and Google Cloud BigQuery. However, in this project, we will use Terraform solely for creating a table in Google Cloud Storage. For Google Cloud BigQuery, we will follow best practices and utilize Python for implementation.
+
+Our approach involves creating an ETL pipeline in Mage-AI from a URL to Google Cloud Storage. We ensure that the data is transferred to Google Cloud Storage, the schema is correct, and the data is clean. With another pipeline, we create a staged table and export it to Google Cloud BigQuery. The data in BigQuery has not yet been modeled. Additionally, we have multiple tables, of which only one is required for visualization. Initially, we perform data modeling to gain an overview of our data:
+
+![Data_modell](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Data_model.png?raw=true)
+
+Now, we have an overview and also the information on how to consolidate all data into one table.
+
+For this process, we utilize dbt to transform the raw data into transformed data. Additionally, for practice, we manually import the seed files into DBT, which could also automatically handle two GZ files. Here is the result of the DAG:
+
+![Data_modell](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/dbt-dag_white.png?raw=true)
+
+
+## Analytics Dashboard
+
+
+## Information about Each Technology
+
+- To get information on how the data is generated, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Data_generator/Readme.md)
+- For instructions on installing Mage-AI and detailed information on how the pipeline works, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Workflow_Orchestration_Mage/Readme.md)
+- For a better overview of dbt, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Dbt/Readme.md)
+- To learn about Terraform, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Terraform/Readme.md)
+
+
 
 
 
