@@ -1,4 +1,4 @@
-# Generated Amusement Park Project
+# :roller_coaster: Generated Amusement Park Project :ferris_wheel:
 
 This project was created for the final project of DataEngineering-ZoomCamp-2024.
 
@@ -59,7 +59,7 @@ Several improvements could be implemented here:
 - Increasing the number of tests in dbt.
 - Enhancing documentation.
 
-## Next Project
+## 💡 Next Project
 
 In this project, various technologies and knowledge were utilized. However, there are improvements that could be made. Rather than enhancing the current project, the next project will be designed to incorporate the learned improvement suggestions, aiming for greater advancement. Here are some aspects to be incorporated in the next project:
 
