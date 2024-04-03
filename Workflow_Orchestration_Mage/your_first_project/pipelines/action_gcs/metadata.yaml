@@ -54,7 +54,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - trigger_visitor_gcs
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -67,6 +68,22 @@ blocks:
   upstream_blocks:
   - transform_delete_spaces
   uuid: export_action_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: trigger_visitor_gcs
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - export_action_gcs
+  uuid: trigger_visitor_gcs
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

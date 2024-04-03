@@ -1,0 +1,8 @@
+python
+from mage_ai.services.dbt.dbt import DbtCloudClient
+
+client = DbtCloudClient(dict(account_id=12345, api_token='abcdefg'))
+
+# Set poll_status=True to wait for job completion.
+# Set poll_status=False to not wait for job completion.
+client.trigger_job_run(12345, poll_status=True)
