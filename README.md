@@ -4,7 +4,7 @@ This project was created for the final project of DataEngineering-ZoomCamp-2024.
 
 The goal of this project is to demonstrate the ability to develop an end-to-end project after completing the ZoomCamp. It was important to utilize certain technologies that are of great significance to a Data Engineer. Since I couldn't find suitable data of personal interest in a short amount of time, nor suitable data models to develop, I decided to generate my own data.
 
-## Overview
+## 📯 Overview
 In this project, we received data from a new amusement park in Germany that has been operating for over a year. To obtain a clear overview of all the generated data, an end-to-end project was created to visualize the data and provide a comprehensive overview. The data is stored in GitHub. First, an overview of the data model will be provided, followed by the process from data extraction to visualization. The goal is to automate everything once the project is set up. For this purpose, the following technologies and tools were used:
 
 Cloud - [Google Cloud Platform](https://cloud.google.com/?hl=de)
@@ -25,7 +25,7 @@ Language - [Python](https://www.python.org/)
 
 Workflow Orchestration - [mage-ai](https://www.mage.ai/)
 
-## Amusement Park Architecture
+## 🧪 Amusement Park Architecture
 
 ![Architecture](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Architecture.png?raw=true)
 
@@ -42,16 +42,33 @@ For this process, we utilize dbt to transform the raw data into transformed data
 ![Data_modell](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/dbt-dag_white.png?raw=true)
 
 
-## Analytics Dashboard
+## 🔍 Analytics Dashboard
+- XXX
 
-
-## Information about Each Technology
+## 📕 Information about Each Technology
 
 - To get information on how the data is generated, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Data_generator/Readme.md)
 - For instructions on installing Mage-AI and detailed information on how the pipeline works, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Workflow_Orchestration_Mage/Readme.md)
 - For a better overview of dbt, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Dbt/Readme.md)
 - To learn about Terraform, click [here](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Terraform/Readme.md)
 
+## 👣 Next Steps
+Several improvements could be implemented here:
+
+- Utilizing Terraform for creating tables in BigQuery.
+- Increasing the number of tests in dbt.
+- Enhancing documentation.
+
+## Next Project
+
+In this project, various technologies and knowledge were utilized. However, there are improvements that could be made. Rather than enhancing the current project, the next project will be designed to incorporate the learned improvement suggestions, aiming for greater advancement. Here are some aspects to be incorporated in the next project:
+
+- Utilization of Google's Virtual Machines.
+- Airflow will be employed for orchestration workflow instead of Mage-AI. The rationale behind this decision is straightforward: Airflow is widely used in the industry and is preferred by the majority of Data Engineers.
+- Spark will be used for the ETL process, leveraging Google's provided Dataproc.
+- Introduction of more comprehensive testing, whether in the orchestration workflow or in dbt.
+- Implementation of Continuous Integration/Continuous Deployment (CI/CD).
+- For the data, it will utilize an API for batch processing. (Stream processing will be implemented in my third project.
 
 
 
