@@ -25,8 +25,7 @@ variable "bq_dataset_name" {
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
-  #default     = "generated-amusement-park-bucket"
-  default     = ["generated-amusement-park-bucket-1", "generated-amusement-park-bucket-2"]
+  default     = "generated-amusement-park-bucket"
 }
 
 variable "gcs_storage_class" {
