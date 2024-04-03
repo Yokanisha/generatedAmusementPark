@@ -23,7 +23,7 @@ Infrastructure as Code software (IaC) - [Terraform](https://www.terraform.io/)
 
 Language - [Python](https://www.python.org/)
 
-Workflow Orchestration - [mage-ai](https://www.Mage.ai/)
+Workflow Orchestration - [Mage-ai](https://www.Mage.ai/)
 
 ## 🧪 Amusement Park Architecture
 
@@ -43,7 +43,13 @@ For this process, we utilize dbt to transform the raw data into transformed data
 
 
 ## 🔍 Analytics Dashboard
-- XXX
+
+This is what the final dashboard looks like.
+In this dashboard, the owner of the amusement park can view the key metrics. Users can adjust the timeframe and visitor demographics as needed.
+
+Here is the link of the [DashBoard](https://lookerstudio.google.com/s/gaNRyPK1TM0)
+
+![Vizualization_Dashboard](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Visualization_of_amusement_park_pic.jpg?raw=true)
 
 ## 📕 Information about Each Technology
 
