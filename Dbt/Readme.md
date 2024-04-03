@@ -14,6 +14,8 @@ The DAG (Directed Acyclic Graph) diagram illustrates the flow direction and depe
 
 **Creation of Analysis Tables:** The `action` and `visitor` tables were merged to create a single table used for visualization in Looker Studio.
 
+![DAG_Overwied](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/dbt-dag.png?raw=true)
+
 ## Using dbt
 The **Data Build Tool (dbt)** is used in this project to define the data pipeline and automate the transformation processes. Dbt facilitates easy management of data models, versioning of transformation steps, and integration into existing data infrastructures.
 
