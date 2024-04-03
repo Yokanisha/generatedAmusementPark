@@ -47,9 +47,9 @@ For this process, we utilize dbt to transform the raw data into transformed data
 This is what the final dashboard looks like.
 In this dashboard, the owner of the amusement park can view the key metrics. Users can adjust the timeframe and visitor demographics as needed.
 
-Here is the link of the [DashBoard](https://lookerstudio.google.com/s/gaNRyPK1TM0)
+Here is the link of the [DashBoard](https://lookerstudio.google.com/s/vHM27_HhVxY)
 
-![Vizualization_Dashboard](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Visualization_of_amusement_park_pic.jpg?raw=true)
+![Vizualization_Dashboard](https://github.com/Yokanisha/generatedAmusementPark/blob/main/Images/Visualization_of_amusement_park_image.jpg?raw=true)
 
 ## 📕 Information about Each Technology
 
