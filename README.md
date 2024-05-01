@@ -1,6 +1,6 @@
 # :roller_coaster: Generated Amusement Park Project :ferris_wheel:
 
-This project was created for the final project of DataEngineering-ZoomCamp-2024.
+This project was created for the final project of [data-engineering-zoomcamp-2024](https://github.com/DataTalksClub/data-engineering-zoomcamp).
 
 The goal of this project is to demonstrate the ability to develop an end-to-end project after completing the ZoomCamp. It was important to utilize certain technologies that are of great significance to a Data Engineer. Since I couldn't find suitable data of personal interest in a short amount of time, nor suitable data models to develop, I decided to generate my own data.
 
